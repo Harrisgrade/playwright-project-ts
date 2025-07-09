@@ -1,5 +1,15 @@
 import { fakerEN } from "@faker-js/faker";
 
+export function generateSeed(seed) {
+  fakerEN.seed(seed);
+  return {
+    firstName: fakerEN.person.firstName(),
+    lastName: fakerEN.person.lastName(),
+    email: fakerEN.internet.email(),
+    password: fakerEN.internet.password(),
+  };
+}
+
 export function generateMockUser() {
   const person = fakerEN.person;
   const internet = fakerEN.internet;

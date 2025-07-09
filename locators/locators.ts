@@ -28,4 +28,9 @@ export enum locators {
   addressCreateAccountButton = "[data-qa='create-account']",
   continueButton = "[data-qa='continue-button']",
   deleteAccountButton = "#header li:nth-child(5) > a",
+
+  loginEmail = "[data-qa='login-email']",
+  loginPassword = "[data-qa='login-password']",
+  loginButton = "[data-qa='login-button']",
+  loginSuccess = "#header li:nth-child(10) > a",
 }
