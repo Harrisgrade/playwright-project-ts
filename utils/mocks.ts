@@ -16,7 +16,7 @@ export function generateMockUser() {
     password: internet.password(),
     dobDay: date.getDay().toString(),
     dobMonth: date.toLocaleString("en-US", { month: "long" }),
-    dobYear: date.getFullYear().toString(),
+    dobYear: fakerEN.number.int({ min: 1900, max: 2021 }).toString(),
     signupForNewsletter: false,
     specialOffersFromPartners: false,
     gender,
